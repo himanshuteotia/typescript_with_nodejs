@@ -7,21 +7,21 @@ Easy way to refer to the different properties + functions that a value has
 
 **Primitive Types**
 
-> > number
-> > string
-> > boolean
-> > void
-> > undefined
-> > string
-> > symbol
-> > null
+1. number
+2. string
+3. boolean
+4. void
+5. undefined
+6. string
+7. symbol
+8. null
 
 **Object Types**
 
-> > functions
-> > arrays
-> > objects
-> > classes
+1. functions
+2. arrays
+3. objects
+4. classes
 
 type annotation : we (developers) tell the Typescript the type
 

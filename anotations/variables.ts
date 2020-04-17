@@ -44,7 +44,7 @@ console.log(coordinates);
 // like const coordinates: {x : number; y: number } = JSON.parse(json)
 
 // 2) when we declare variable on one line
-// and initialize it late
+// and initialize it later
 
 let words = ["red", "green", "yellow"];
 let findWord: boolean; // we are defining the variable here and initializing later so here we need to define the type annotation otherwise it

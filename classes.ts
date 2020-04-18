@@ -16,7 +16,7 @@ console.log(vehicle.color); // orange
 class Car extends Vehicle {
   constructor(public wheels: number, color: string) {
     // here I have not put public before color as I dont want to create another color variable in Car class
-    super(color);
+    super(color); // super function is to call the parent constructor
   }
 }
 

@@ -1,4 +1,4 @@
-import { Sorter } from './Sorter';
+import { Sorter } from "./Sorter";
 
 export class NumbersCollection extends Sorter {
   constructor(public data: number[]) {
@@ -18,3 +18,4 @@ export class NumbersCollection extends Sorter {
     this.data[leftIndex] = this.data[rightIndex];
     this.data[rightIndex] = leftHand;
   }
+}

@@ -13,6 +13,7 @@ Abstract class :
 2. Only used as a parent class
 3. In abstract class we can have references that dont exists in abstract class the only thing is we need to define them where we implements the abstract class.
 ```
+// here abstract class is saying provide me these three functions { compare, swap, length } I will do the sort for you
 abstract class SortArray {
     abstract compare(leftIndex: number, rightIndex: number) : boolean;
     abstract swap(leftIndex: number, rightIndex: number) : void;

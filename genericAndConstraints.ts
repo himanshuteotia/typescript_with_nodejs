@@ -82,8 +82,8 @@ interface Name {
 }
 
 // Partial type create object with optional properties so typescript will not show an error message of property 
-// not exists in object as intially we just defining the object without any property. 
-// at return statement again we have to define the type as 'newName' is Partial type now and we have defined
+// not exists in an object as intially we just defining the object without any property. 
+// at return statement again we have to define the type as 'newName' is a Partial type now as we have defined
 // that this function will return Name type which dosent have optional properties. 
 
 function createName(fName : string, lName:string) : Name {

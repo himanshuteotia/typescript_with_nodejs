@@ -40,7 +40,9 @@ extractAndConvert({'name' : 'Himanshu'},'name') // this will work
 
 // create generic class
 
-class DataStorage<T> {
+// we are defining here that, this class can only work with extended types (string, number and boolean)
+// if we provide object it will through an error
+class DataStorage<T extends string | number | boolean> {
     private data:T[]  = []
     
     addItem(item:T) {

@@ -72,6 +72,29 @@ numberStorage.addItem(28) //Note: if I provide here string it will through an er
 
 
 
+// Partial type
+
+// let say we have a interface
+
+interface Name {
+    firstname : string;
+    lastname : string;
+}
+
+// Partial type create object with optional properties so typescript will not show an error message of property 
+// not exists in object as intially we just defining the object without any property. 
+// at return statement again we have to define the type as 'newName' is Partial type now and we have defined
+// that this function will return Name type which dosent have optional properties. 
+
+function createName(fName : string, lName:string) : Name {
+    let newName : Partial<Name> = {} // So what Partial do here is create an object with optional properties 
+    newName.firstName = fName;
+    newName.lName = lName;
+    return newName as Name;
+}
+
+
+
 
 
 

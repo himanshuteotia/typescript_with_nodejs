@@ -35,3 +35,56 @@ const extractAndConvert<T extends object, U extends keyof T>(obj:T,key:U) {
 
 extractAndConvert({},'name') // this will through an error because the {} we are sending dosent have key 'name'
 extractAndConvert({'name' : 'Himanshu'},'name') // this will work
+
+
+
+// create generic class
+
+class DataStorage<T> {
+    private data:T[]  = []
+    
+    addItem(item:T) {
+        this.data.push(item)
+    }
+    
+    popItem() {
+        this.data.pop()
+    }
+    
+    getData() {
+        return this.data;
+    }
+}
+
+// now I can create any type of data storage
+
+const stringStorage = new DataStorage<string>();
+stringStorage.addItem('Teotia') //Note: if I provide here number it will through an error 
+
+// same I can create for number
+
+const numberStorage = new DataStorage<number>();
+numberStorage.addItem(28) //Note: if I provide here string it will through an error 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

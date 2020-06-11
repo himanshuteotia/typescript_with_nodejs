@@ -24,3 +24,14 @@ function mergeConstraints<T extends object, U extends object>(k:T,g:U) {
 
 
 const genericAndConstraintObject = mergeConstraint({ h: 1 }, { t: 5 })
+
+
+
+// More advance stuff
+
+const extractAndConvert<T extends object, U extends keyof T>(obj:T,key:U) {
+    return obj[key];
+}
+
+extractAndConvert({},'name') // this will through an error because the {} we are sending dosent have key 'name'
+extractAndConvert({'name' : 'Himanshu'},'name') // this will work

@@ -44,5 +44,17 @@ interface Name {
 }
 
 
+// interface with clases
+
+class Person implements Name {
+   
+   firstName : string;
+   lastName: string;
+   
+   greet(msg:string) {
+      console.log(`Greeting message from ${this.firstName} : ${msg}`)
+   }
+
+}
 
 

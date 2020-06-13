@@ -27,3 +27,22 @@ class MyName implements properties {
 
 let myname = new MyName('Himanshu', 'Teotia');
 console.log(myname.fullName())
+
+
+
+
+
+// advance interfaces
+
+
+interface Name {
+   firstName : string;
+   lastName : string;
+   age?: number; // optional key
+   [key : string] : any; // we can add any string with any value
+   greet(msg: string) : void;
+}
+
+
+
+

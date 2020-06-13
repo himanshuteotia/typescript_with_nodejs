@@ -57,4 +57,24 @@ class Person implements Name {
 
 }
 
+// interfaces with function
+
+interface Add {
+   (a : number, b : number) : number;
+}
+
+let add : Add;
+add = function(v1 :number ,v2 : number) : number {
+   return v1 + v2 * 2;
+}
+
+
+// interface inheritance
+
+interface Aged extends Name {
+ age : number; // here Aged interface age will override the Name's age property and make it required property now
+} // please note: age property was optional in Name intergface
+
+
+
 

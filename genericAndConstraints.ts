@@ -10,7 +10,7 @@ const genericObject = mergeGeneric({ h: 1 }, { t: 5 })
 
 const anotherGenericObject = mergeGeneric({ h: 1 }, 30)
 
-// it will not throw an error but we cannot merge number with object
+// it will not throw an error as we cannot merge number with object
 // to overcome this problem we have to use Constraints. Using constraints 
 // we can strictly tell typescript that both the parameters should be object type otherwise i will 
 // throws an error on compile time
